@@ -1,9 +1,0 @@
-.info-cv{
-    background-color: #000000;
-    border-top-right-radius: 150px;
-    border-top-left-radius: 150px;
-    display: grid;
-    grid-template-columns:40% 40%;
-    gap: 50px;
-    box-shadow: rgba(0, 0, 0, 0.50) 0px -30px 50px; 
-}

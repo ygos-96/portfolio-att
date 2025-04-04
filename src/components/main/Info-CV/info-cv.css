@@ -1,0 +1,89 @@
+.info-cv {
+  background-color: #000000;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  gap: 250px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -30px 50px;
+  & .img-skills{
+    width: 100%;
+    max-width: 453px;
+    max-height: 626px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .info-cv {
+    gap: 50px;
+    margin-top: 50px;
+  }
+}
+
+
+
+@media (max-width: 850px) {
+  .info-cv {
+    flex-direction: column;
+    padding: 0px !important;
+    padding-bottom: 20px !important;
+
+    & .card-curriculo {
+      display: flex;
+      justify-content: center;
+      align-items: start;
+      width: 100%;
+      margin-top: 3rem;
+    }
+    & .card-curriculo .card-cv:nth-child(2) {
+      margin-top: 0px !important;
+    }
+
+    & .card-cv h2 {
+      font-size: 20px;
+    }
+
+    & .info-skills {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    & .info-skills h2 {
+      text-align: center;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .info-cv {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+
+    & .card-curriculo {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .info-cv {
+    & .card-cv h2 {
+      text-align: center;
+    }
+    & .card-cv:nth-child(1) {
+      margin-bottom: 3.5rem;
+    }
+
+    & .info-skills h2 {
+     font-size: 20px;
+    }
+ 
+  }
+}
+
+@media (max-width: 420px) {
+  & .img-skills {
+    width: 350px;
+  }
+}

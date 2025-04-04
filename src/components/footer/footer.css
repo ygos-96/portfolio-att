@@ -1,0 +1,66 @@
+.footer {
+  background-color: #000000;
+  border-top-right-radius: 150px;
+  border-top-left-radius: 150px;
+  display: grid;
+  grid-template-columns: 50% 1% 20%;
+  gap: 50px;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px -30px 50px;
+
+  & .division {
+    width: 5px;
+    height: 100%;
+    background-color: #fff;
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    & p {
+      font-size: 24px !important;
+      width: 100% !important;
+    }
+
+    & div:nth-child(2) {
+      width: 100% !important;
+    }
+  }
+}
+
+@media (max-width: 999px) {
+  .footer {
+    & p {
+      font-size: 20px !important;
+    }
+
+    & div:nth-child(2) {
+      width: 100% !important;
+    }
+
+    & .icon-contat {
+      height: 40px;
+      width: 40px;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .footer {
+    border-top-right-radius: 50px;
+    border-top-left-radius: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: start !important;
+
+    & p {
+      font-size: 16px !important;
+    }
+
+    & .form-control::placeholder{
+      font-size: 12px !important;
+    }
+  }
+
+  
+}
